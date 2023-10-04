@@ -7,4 +7,4 @@ jobs:
     container: ghcr.io/inti-cmnb/kicad7_auto
     steps:
       - run: mkdir -p assembly/foo_pcb
-      - run: kicad-cli sch export pdf -o assembly/foo_pcb/foo_pcb.sch board/foo_pcb/foo_pcb.kicad_sch
+      - run: kicad-cli sch export pdf -o assembly/foo_pcb/foo_pcb.sch ${{github.workspace}}/board/foo_pcb/foo_pcb.kicad_sch
