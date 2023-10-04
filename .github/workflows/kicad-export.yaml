@@ -1,6 +1,7 @@
 name: KiCad export
 
-on: [push]
+on: push
+jobs:
   export-schematic:
   runs-on: ubuntu-latest
   container: kicad7_auto
